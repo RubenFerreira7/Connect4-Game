@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="menu.css">
+    <title>4 em linha</title>
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <section>
+        <div class="hud">
+            <div class="menu">
+                <h1> <i> 4 EM LINHA </i> </h1>
+                <div> <button id="newPlayer">Novo Jogador</button> </div>
+                <div> <button id="vsPlayer">1 vs 1</button> </div>
+                <div><button id="vsComp">1 vs Computador</button></div>
+                <div><button id="rank">Classificações</button></div>
+                <div><button id="rules">Regras</button></div>
+
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <div id="addPlayerModal" class="modal">
+
+        <div class="modal-content">
+
+            <h1>Introduzir nome do jogador</h1>
+            <input type="text" id="addPlayer" required>
+            <div id="contentModal">
+
+                <button id="createPlayer" class="buttonModal">Criar jogador</button>
+                <p id="msgError">Este nome já existe!</p>
+                <p id="msgErrorNone">Não pode ser adicionado um nome vazio!</p>
+
+            </div>
+        </div>
+    </div>
+    <div id="rulesModal" class="modal">
+
+        <div class="modal-content">
+
+            <h1>Regras de jogo</h1>
+           
+               <p>O objetivo de jogo é colocar 4 peças da mesma cor em linha (vertical, horzinontal ou diagonal).</p> 
+               <p>A cada 3 jogadas uma peça de cor preta é adicionada ao tabuleiro.</p> 
+               <p>Essa peça pode ser colocada em qualquer zona que esteja por ocupar e nunca pode servir como peça para fazer 4 em linha.</p>
+               <p>Bom jogo!</p>
+         
+        </div>
+
+
+    </div>
+
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+
+</html>
